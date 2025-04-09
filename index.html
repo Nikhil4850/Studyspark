@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Spark Profile</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="h">
@@ -21,13 +20,200 @@
 
     <style>
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.h {
+    background: url('https://png.pngtree.com/background/20230427/original/pngtree-all-the-old-books-on-the-shelves-in-a-library-picture-image_2496728.jpg') center/cover no-repeat;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+/* Hero Section */
+.hero {
+    background: url('https://png.pngtree.com/background/20230427/original/pngtree-all-the-old-books-on-the-shelves-in-a-library-picture-image_2496728.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.about img {
+    width: 70%;
+    border-radius: px;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about h2 {
+    color: #d32f2f;
+}
+
+.about .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+/* Overview Section */
+.overview {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.overview h2 {
+    margin-bottom: 20px;
+}
+
+.overview-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Facilities Section */
+.facilities {
+    background: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.facilities h2 {
+    margin-bottom: 20px;
+}
+
+.facility-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.facility {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.facility img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mission Section */
+.mission {
+    background: #d32f2f;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.mission h2 {
+    margin-bottom: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
         .overlay {
           position: fixed;
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(0, 123, 255, 0.3); /* light transparent blue */
+          background-color: rgba(0, 123, 255, 0.3);
           z-index: 999;
           display: none;
           transition: background-color 0.5s ease;
@@ -44,7 +230,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          background: linear-gradient(to right, #deae34, #FFD700, #efe299, #efe299);
+          background: linear-gradient(to right, #ded034, #48ff00, #99efa2, #cdde0f);
           padding: 20px;
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
           border-radius: 20px;
@@ -107,7 +293,7 @@
           Unlock Premium Features!
         </h2>
         <p>With StudySpark Premium</p>
-        <img src="" alt="Premium Icon" class="popup-circle-icon" style="width: 200px;height: 200px;" />
+        <img src="https://media-hosting.imagekit.io/38af96dfb0304de7/s.png?Expires=1838822436&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jiU73pXh4iCyUPSVobYeL-32i413Bt7qcQu7do3ufoUVrBhW-x8EczIA4ValINSPiJ0~a9LpGg58TMo1G4Is-ARTe4Cpmy6jt-gvwXwm7PRU-x7ZU4xxiIbx5FKM-kuLpnOb-cEY~T-yg-gT34kJ2W4dPCMlC-Vm59WPg-GdSm04fOfrhL~1lDwI4uqwLNlq9S1L2Ks0EfGRTD3DKkVdBzo3F1Ada0G-hpxgGAibOh72Q4BontZ72UlFnb2OidwuUrDElqaWTKd5zCNR8slocA~eESZIR~i9GxMBrpP2xsk2Gb~cKl1IdgdCZEknn2mU8TwDQNrJdFr4dML9QGSB0g__" alt="Premium Icon" class="popup-circle-icon" style="width: 200px;height: 200px;" />
         <ul>
           <li>Personalized Career guidance</li>
           <li>Exclusive Learning resources</li>
